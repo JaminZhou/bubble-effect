@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25E5BB4979D91269C3D56CFF /* libPods-bubble-effect.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ECF432C4C80748289C8083A /* libPods-bubble-effect.a */; };
 		ED349D571E7547ED003F4992 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED349D561E7547ED003F4992 /* AppDelegate.swift */; };
 		ED349D591E7547ED003F4992 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED349D581E7547ED003F4992 /* ViewController.swift */; };
 		ED349D5C1E7547ED003F4992 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED349D5A1E7547ED003F4992 /* Main.storyboard */; };
 		ED349D5E1E7547ED003F4992 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED349D5D1E7547ED003F4992 /* Assets.xcassets */; };
 		ED349D611E7547ED003F4992 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED349D5F1E7547ED003F4992 /* LaunchScreen.storyboard */; };
-		ED349D6E1E754A8F003F4992 /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = ED349D6B1E754A8F003F4992 /* FLAnimatedImage.m */; };
-		ED349D6F1E754A8F003F4992 /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED349D6D1E754A8F003F4992 /* FLAnimatedImageView.m */; };
 		ED349D721E754AE9003F4992 /* bear.gif in Resources */ = {isa = PBXBuildFile; fileRef = ED349D701E754AE9003F4992 /* bear.gif */; };
 		ED349D731E754AE9003F4992 /* postai.gif in Resources */ = {isa = PBXBuildFile; fileRef = ED349D711E754AE9003F4992 /* postai.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FD42C6111698F8A8771E170 /* Pods-bubble-effect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bubble-effect.release.xcconfig"; path = "Target Support Files/Pods-bubble-effect/Pods-bubble-effect.release.xcconfig"; sourceTree = "<group>"; };
+		4ECF432C4C80748289C8083A /* libPods-bubble-effect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bubble-effect.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E3D6D3EA493511AB84B5810 /* Pods-bubble-effect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bubble-effect.debug.xcconfig"; path = "Target Support Files/Pods-bubble-effect/Pods-bubble-effect.debug.xcconfig"; sourceTree = "<group>"; };
 		ED349D531E7547ED003F4992 /* bubble-effect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bubble-effect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED349D561E7547ED003F4992 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED349D581E7547ED003F4992 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,10 +29,6 @@
 		ED349D601E7547ED003F4992 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED349D621E7547ED003F4992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED349D691E754A8F003F4992 /* bubble-effect-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bubble-effect-Bridging-Header.h"; sourceTree = "<group>"; };
-		ED349D6A1E754A8F003F4992 /* FLAnimatedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImage.h; sourceTree = "<group>"; };
-		ED349D6B1E754A8F003F4992 /* FLAnimatedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImage.m; sourceTree = "<group>"; };
-		ED349D6C1E754A8F003F4992 /* FLAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImageView.h; sourceTree = "<group>"; };
-		ED349D6D1E754A8F003F4992 /* FLAnimatedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImageView.m; sourceTree = "<group>"; };
 		ED349D701E754AE9003F4992 /* bear.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bear.gif; sourceTree = "<group>"; };
 		ED349D711E754AE9003F4992 /* postai.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = postai.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -40,17 +38,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25E5BB4979D91269C3D56CFF /* libPods-bubble-effect.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		72DAC52C54693CE7300E696B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E3D6D3EA493511AB84B5810 /* Pods-bubble-effect.debug.xcconfig */,
+				1FD42C6111698F8A8771E170 /* Pods-bubble-effect.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A5DE4E463CDD33410A24FE8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4ECF432C4C80748289C8083A /* libPods-bubble-effect.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ED349D4A1E7547ED003F4992 = {
 			isa = PBXGroup;
 			children = (
 				ED349D551E7547ED003F4992 /* bubble-effect */,
 				ED349D541E7547ED003F4992 /* Products */,
+				72DAC52C54693CE7300E696B /* Pods */,
+				A5DE4E463CDD33410A24FE8E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,10 +98,6 @@
 		ED349D681E754A5D003F4992 /* FLAnimatedImage */ = {
 			isa = PBXGroup;
 			children = (
-				ED349D6A1E754A8F003F4992 /* FLAnimatedImage.h */,
-				ED349D6B1E754A8F003F4992 /* FLAnimatedImage.m */,
-				ED349D6C1E754A8F003F4992 /* FLAnimatedImageView.h */,
-				ED349D6D1E754A8F003F4992 /* FLAnimatedImageView.m */,
 				ED349D691E754A8F003F4992 /* bubble-effect-Bridging-Header.h */,
 			);
 			name = FLAnimatedImage;
@@ -105,6 +119,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED349D651E7547ED003F4992 /* Build configuration list for PBXNativeTarget "bubble-effect" */;
 			buildPhases = (
+				B0C7558C99F702BA1D5371A8 /* [CP] Check Pods Manifest.lock */,
 				ED349D4F1E7547ED003F4992 /* Sources */,
 				ED349D501E7547ED003F4992 /* Frameworks */,
 				ED349D511E7547ED003F4992 /* Resources */,
@@ -169,6 +184,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B0C7558C99F702BA1D5371A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-bubble-effect-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ED349D4F1E7547ED003F4992 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -176,8 +216,6 @@
 			files = (
 				ED349D591E7547ED003F4992 /* ViewController.swift in Sources */,
 				ED349D571E7547ED003F4992 /* AppDelegate.swift in Sources */,
-				ED349D6E1E754A8F003F4992 /* FLAnimatedImage.m in Sources */,
-				ED349D6F1E754A8F003F4992 /* FLAnimatedImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +352,7 @@
 		};
 		ED349D661E7547ED003F4992 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E3D6D3EA493511AB84B5810 /* Pods-bubble-effect.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -331,6 +370,7 @@
 		};
 		ED349D671E7547ED003F4992 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FD42C6111698F8A8771E170 /* Pods-bubble-effect.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
