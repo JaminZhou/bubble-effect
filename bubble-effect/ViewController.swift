@@ -26,11 +26,11 @@ class ViewController: UIViewController {
     
     func addBubbleEffect(_ view: UIView) {
         let pathAnimation = CAKeyframeAnimation(keyPath: "position")
-        pathAnimation.calculationMode = kCAAnimationPaced
-        pathAnimation.fillMode = kCAFillModeForwards
+        pathAnimation.calculationMode = .paced
+        pathAnimation.fillMode = .forwards
         pathAnimation.isRemovedOnCompletion = false
         pathAnimation.repeatCount = Float.infinity
-        pathAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+        pathAnimation.timingFunction = CAMediaTimingFunction(name: .linear)
         pathAnimation.duration = 5.0
         
         let width = view.frame.size.width - 3.0
@@ -46,7 +46,7 @@ class ViewController: UIViewController {
         scaleX.keyTimes = [0.0, 0.5, 1.0]
         scaleX.repeatCount = Float.infinity
         scaleX.autoreverses = true
-        scaleX.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        scaleX.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
         view.layer.add(scaleX, forKey: "scaleXAnimation")
         
         let scaleY = CAKeyframeAnimation(keyPath: "transform.scale.y")
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
         scaleY.keyTimes = [0.0, 0.5, 1.0]
         scaleY.repeatCount = Float.infinity
         scaleY.autoreverses = true
-        scaleY.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        scaleY.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
         view.layer.add(scaleY, forKey: "scaleYAnimation")
     }
     
@@ -65,7 +65,7 @@ class ViewController: UIViewController {
         bearView.center = CGPoint(x: screenWidth/2-33, y: screenHeight/2-60)
         bearView.layer.cornerRadius = width/2
         bearView.layer.masksToBounds = true
-        bearView.animatedImage = FLAnimatedImage(animatedGIFData: NSData(contentsOfFile: Bundle.main.path(forResource: "bear", ofType: "gif")!) as Data!)
+        bearView.animatedImage = FLAnimatedImage(animatedGIFData: NSData(contentsOfFile: Bundle.main.path(forResource: "bear", ofType: "gif")!) as Data?)
         view.addSubview(bearView)
     }
     
@@ -75,7 +75,7 @@ class ViewController: UIViewController {
         postaiView.center = CGPoint(x: screenWidth/2+82, y: screenHeight/2+110)
         postaiView.layer.cornerRadius = width/2
         postaiView.layer.masksToBounds = true
-        postaiView.animatedImage = FLAnimatedImage(animatedGIFData: NSData(contentsOfFile: Bundle.main.path(forResource: "postai", ofType: "gif")!) as Data!)
+        postaiView.animatedImage = FLAnimatedImage(animatedGIFData: NSData(contentsOfFile: Bundle.main.path(forResource: "postai", ofType: "gif")!) as Data?)
         view.addSubview(postaiView)
     }
 }
